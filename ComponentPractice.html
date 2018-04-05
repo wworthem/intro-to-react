@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My 2nd React App</title>
+  </head>
+  <body>
+
+    <div id="app"></div>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/read.development.js"></script> -->
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script type="text/babel">
+      class NewMessage extends React.Component {
+          render() {
+              return (
+                <div>
+                   Im ready to learn more {this.props.name}
+                </div>
+              );
+            }
+          }
+
+          ReactDOM.render(
+            <NewMessage name="React!" />,
+             document.getElementById('app')
+          );
+</script>
+</body>
+
+</html>
